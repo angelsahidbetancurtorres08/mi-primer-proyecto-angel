@@ -1,0 +1,678 @@
+/* ===== PALETA (para cambiar colores rapido, solo toque estos) =====
+   azul principal   : #3b82f6
+   azul oscuro      : #1d4ed8
+   azul claro       : #93c5fd
+   fondo azul suave : #eff6ff
+   acento ambar     : #f59e0b
+   texto oscuro     : #0f1b33
+*/
+
+*{margin: 0;
+  padding: 0;
+   box-sizing: border-box;
+  }
+
+  body{
+font-family: 'roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #0f1b33;
+  font-weight: 300;
+}
+
+.contenedor1 {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+
+/*header*/
+header::before {
+  content: "";
+display: block;
+ margin-bottom: 80px;
+}
+
+nav {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid transparent;
+  box-shadow: 1px 1px 10px rgba(59,130,246,.25);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: ease-in-out 0.5s;
+}
+
+.nav {
+  display:flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.nav .logo {
+  height: 80px;
+}
+
+.nav .logo img {
+  height: 100%;
+  vertical-align: top;
+}
+
+
+.enlaces-header a {
+  font-weight: 300;
+  transition: ease-in-out 0.5s;
+}
+
+.nav .enlaces-header a {
+  color: #1d4ed8;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.contenido-header {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes animat{
+  0%{transform: scale(0);} 100%{transform: scale(1);}
+}
+
+.texto-header {
+  margin: 0 0 0 30px;
+}
+
+.contenido-header a {
+margin: 28px 0 0 0;
+width: 130px;
+display: inline-block;
+background: #3b82f6;
+text-align: center;
+color : #fff;
+padding: 12px 0;
+text-decoration: none;
+font-weight: 400;
+text-transform: uppercase;
+font-size: 14px;
+border-radius: 5px;
+box-shadow: 0px 8px 32px rgba(59,130,246,.46);
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+/*ABOUT US*/
+
+.about-us {
+  background: #eff6ff;
+}
+
+.contenedor-servicio{
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px;
+  justify-content: space-around;
+
+}
+
+.servicio{
+  width: 29%;
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 45px 30px 60px 70px;
+  transition: 0.5s;
+
+}
+
+.servicio:hover{
+ box-shadow: 0px 4px 10px rgba(59,130,246,.3);
+}
+
+.servicio>i {
+  font-size: 30px;
+  color: #fff;
+  background: #3b82f6;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 32px rgba(59,130,246,.46);
+}
+
+.servicio>h3 {
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.servicio>p {
+  font-weight: 100;
+  color: #0f1b33;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+.servicio>a {
+ color: #3b82f6;
+ font-weight: 400;
+ text-decoration: none;
+}
+
+.servicio>a:hover {
+  color: #f59e0b;
+  transition: color .5s;
+}
+
+
+/*preguntas*/
+
+.pregunta {
+  height: 600px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.pregunta>img{
+  width: 550px;
+
+}
+
+.texto-pregunta {
+  margin: 0 0 0 30px;
+}
+
+
+.texto-pregunta a {
+  margin: 28px 0 0 0;
+  width: 130px;
+  display: inline-block;
+  background: #3b82f6;
+  text-align: center;
+  color : #fff;
+  padding: 12px 0;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 32px rgba(59,130,246,.46);
+
+}
+
+/*resultados*/
+
+
+.resultados {
+  background: #eff6ff;
+  padding-top: 30px;
+}
+
+.content-resultados {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.numbers .number {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  padding: 40px 35px;
+  margin-bottom: 20px;
+}
+
+.numbers .number h4 {
+ color:#3b82f6;
+ font-size: 50px;
+font-weight: 500;
+margin-bottom: 20px;
+
+}
+
+.numbers .number p {
+ color: #0f1b33;
+ font-weight: 300;
+}
+
+.results-text {
+  width: 37%;
+
+}
+
+.results-text h4 {
+  color: #0f1b33;
+  font-size: 40px;
+
+}
+
+.results-text p {
+  color: #0f1b33;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.results-text>a {
+ color: #3b82f6;
+ text-decoration: none;
+ display: inline-block;
+ border: 1px solid #3b82f6;
+ padding: 20px 0;
+ width: 120px;
+ text-align: center;
+ border-radius: 5px;
+}
+
+.box-skills h4{
+  font-size: 24px;
+  color: #fff;
+  background: #3b82f6;
+  width: 300px;
+  border-radius: 6px;
+  padding: 10px 0 10px 15px;
+  margin-bottom: 10px;
+}
+
+.box-skills i {
+  color: #3b82f6;
+  font-size: 20px;
+}
+
+
+/*footer*/
+
+footer {
+  background: #1d4ed8;
+  padding: 60px 0;
+  overflow :hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+
+}
+
+.partfooter {
+  width: 20%;
+  text-align: center;
+}
+
+.partfooter h4 {
+  color: #fff;
+  font-size: 20px;
+ font-weight: 400;
+  margin-bottom: 30px;
+}
+
+
+.partfooter a{
+  display: block;
+  text-decoration: none;
+  color: #dbeafe;
+  font-weight: 300;
+  transition: color .3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.partfooter a:hover{
+  color: #fcd34d;
+}
+
+.partfooter img{
+  width: 70%;
+}
+
+.social-media i{
+  font-size: 20px;
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #93c5fd;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  line-height: 36px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  transition: all ease-in-out .3s;
+  margin-right: 5px;
+}
+
+.social-media i:hover{
+  color:#1d4ed8;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+
+/* ===== transiciones (la animación "animat" ya existía pero nunca se usaba) ===== */
+
+.contenido-header {
+  animation: animat 0.8s ease-out;
+}
+
+.nav .enlaces-header a:hover {
+  color: #f59e0b;
+}
+
+.contenido-header a,
+.texto-pregunta a,
+.results-text > a {
+  transition: transform .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.contenido-header a:hover,
+.texto-pregunta a:hover {
+  transform: translateY(-4px);
+  background: #1d4ed8;
+}
+
+.servicio:hover {
+  transform: translateY(-8px);
+}
+
+.servicio > i {
+  transition: transform .4s ease;
+}
+
+.servicio:hover > i {
+  transform: scale(1.15);
+}
+
+.numbers .number {
+  transition: transform .3s ease;
+}
+
+.numbers .number:hover {
+  transform: scale(1.05);
+}
+
+
+/* ===== imágenes: tamaño controlado ===== */
+
+img {
+  max-width: 100%;
+}
+
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicios > img {
+  width: 450px;
+}
+
+
+/* ===== RESPONSIVE (tablet y movil) ===== */
+
+@media (max-width: 900px) {
+
+  .contenedor1 {
+    padding: 40px 0;
+  }
+
+  .nav {
+    padding: 0 20px;
+  }
+
+  .contenido-header {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .texto-header {
+    margin: 0;
+  }
+
+  .titulo {
+    font-size: 36px;
+  }
+
+  .contenedor-servicio {
+    margin: 30px 0;
+    gap: 20px;
+  }
+
+  .servicio {
+    width: 45%;
+    margin-bottom: 0;
+    padding: 35px 25px;
+  }
+
+  .pregunta {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .pregunta > img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .texto-pregunta {
+    margin: 0;
+  }
+
+  .content-resultados {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .numbers,
+  .results-text {
+    width: 100%;
+  }
+
+  .box-skills h4 {
+    width: 100%;
+  }
+
+  .servicios {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .servicios > img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  footer {
+    padding: 40px 0;
+  }
+
+  .partfooter {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  header::before {
+    margin-bottom: 64px;
+  }
+
+  .nav {
+    height: 64px;
+    padding: 0 12px;
+  }
+
+  .nav .logo {
+    height: 64px;
+  }
+
+  .nav .enlaces-header a {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .servicio {
+    width: 100%;
+  }
+
+  .numbers .number {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .numbers .number h4 {
+    font-size: 40px;
+  }
+
+  .results-text h4 {
+    font-size: 28px;
+  }
+
+  .partfooter {
+    width: 100%;
+  }
+}
+
+
+/* ===== BOTÓN HAMBURGUESA ===== */
+
+.hamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 101;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 8px;
+  width: 24px;
+  height: 2px;
+  background: #1d4ed8;
+  border-radius: 2px;
+  transition: transform .3s ease, opacity .3s ease, top .3s ease;
+}
+
+.hamburger span:nth-child(1) { top: 12px; }
+.hamburger span:nth-child(2) { top: 19px; }
+.hamburger span:nth-child(3) { top: 26px; }
+
+/* se convierte en X al abrir */
+.hamburger.activo span:nth-child(1) { top: 19px; transform: rotate(45deg); }
+.hamburger.activo span:nth-child(2) { opacity: 0; }
+.hamburger.activo span:nth-child(3) { top: 19px; transform: rotate(-45deg); }
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* panel desplegable debajo de la barra */
+  .enlaces-header {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(59,130,246,.2);
+    transition: max-height .4s ease;
+  }
+
+  .enlaces-header.activo {
+    max-height: 400px;
+  }
+
+  .nav .enlaces-header a,
+  .nav .enlaces-header a:first-child {
+    margin: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-top: 1px solid #eff6ff;
+  }
+
+  .nav .enlaces-header a:hover {
+    background: #eff6ff;
+  }
+}
+
+
+/* ===== EFECTO EN LAS TARJETAS (.servicio) ===== */
+
+.servicio {
+  position: relative;
+  overflow: hidden;
+  transition: transform .4s ease, box-shadow .4s ease, opacity .6s ease;
+}
+
+/* barra de color que se dibuja arriba al pasar el mouse */
+.servicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #f59e0b);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s ease;
+}
+
+.servicio:hover::before {
+  transform: scaleX(1);
+}
+
+/* el título cambia de color */
+.servicio > h3 {
+  transition: color .3s ease;
+}
+
+.servicio:hover > h3 {
+  color: #3b82f6;
+}
+
+/* aparición suave al hacer scroll */
+.servicio.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
